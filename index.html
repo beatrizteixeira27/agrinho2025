@@ -14,19 +14,23 @@
 
     <div class="filters">
         <h3>Filtrar Produtos</h3>
-        <label for="category">Categoria:</label>
-        <select id="category" onchange="filterProducts()">
-            <option value="all">Todos</option>
-            <option value="frutas">Frutas</option>
-            <option value="legumes">Legumes</option>
-            <option value="queijos">Queijos</option>
-        </select>
-        <label for="availability">Disponibilidade:</label>
-        <select id="availability" onchange="filterProducts()">
-            <option value="all">Todos</option>
-            <option value="disponivel">Disponível</option>
-            <option value="indisponivel">Indisponível</option>
-        </select>
+        <div class="filter-group">
+            <label for="category">Categoria:</label>
+            <select id="category" onchange="filterProducts()">
+                <option value="all">Todos</option>
+                <option value="frutas">Frutas</option>
+                <option value="legumes">Legumes</option>
+                <option value="queijos">Queijos</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="availability">Disponibilidade:</label>
+            <select id="availability" onchange="filterProducts()">
+                <option value="all">Todos</option>
+                <option value="disponivel">Disponível</option>
+                <option value="indisponivel">Indisponível</option>
+            </select>
+        </div>
     </div>
 
     <div id="product-list" class="product-list">
